@@ -1,4 +1,5 @@
 const name = "Ranjit Kumar Mandal";
-const {orgho, add} = require('./orgho');
+const {orgho, add, multiple} = require('./orgho');
 const addResult = add(100, 500);
-console.log(name, orgho, addResult );
+const gunFol = multiple(252, 12);
+console.log("Gunfol=", gunFol,",", "GogFol =", addResult);
