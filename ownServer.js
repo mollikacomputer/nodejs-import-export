@@ -3,9 +3,9 @@ const http=require('http');
 // console.log(http);
 const server = http.createServer((req, res)=>{
     if(req.url=='/'){
-        res.writeHead(200,{'Content-Type':'Text/html'});
-        res.write("<h1> This is Home Page</h1>");
-        res.end();
+        // sent data json formate
+        res.writeHead(200,{'Content-Type':'application/json'});
+        res.end(JSON.stringify({course:"Javascript"}));
     }else if(req.url=='/about'){
         res.writeHead(200,{'Content-Type':'Text/html'});
         res.write("<h1> This is About Page</h1>")
