@@ -1,3 +1,4 @@
 const name = "Ranjit Kumar Mandal";
-const {orgho} = require('./orgho');
-console.log(name, orgho);
+const {orgho, add} = require('./orgho');
+const addResult = add(100, 500);
+console.log(name, orgho, addResult );
