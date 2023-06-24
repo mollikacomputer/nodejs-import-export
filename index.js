@@ -11,12 +11,12 @@ const server = http.createServer((req, res)=>{
         //         res.end()
         //     }
         // })
-        fs.writeFile('data.txt', "Hello Node js for write data",(err)=>{
+        fs.writeFile('NewData2.txt', "Hello New data Node js for write data",(err)=>{
             if(err){
                 res.write("fail to write data!!!")
                 res.end()
             }else{
-                res.write('data written successfully')
+                res.write('New data written successfully')
                 res.end()
             }
         })
